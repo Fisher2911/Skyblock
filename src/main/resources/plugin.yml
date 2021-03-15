@@ -1,0 +1,62 @@
+name: BetterSkyblock
+version: 1.0
+main: me.herobrinegoat.betterskyblock.BetterSkyblock
+author: HeroBrineGoat
+api-version: 1.16
+softdepend:
+  [FastAsyncWorldEdit, WorldEdit]
+depend:
+  [Vault, MenuApi]
+commands:
+  island:
+    description: used as the base for all island commands
+    usage: /island
+    aliases:
+      [is]
+  generators:
+    description: used as the base for all generator commands
+    usage: /generator
+  cost:
+    description: used as the base for all cost commands
+    usage: /cost
+  pay:
+    description: used as the base for all payment commands
+    usage: /pay
+  balance:
+    description: used as the base for all money commands
+    usage: /balance
+    aliases: [money, bal]
+  exchange:
+    description: used as the base for all exchange commands
+    usage: /exchange
+  booster:
+    description: used as the base for all booster commands
+    usage: /booster
+  help:
+    description: used as the base for all skyblock commands
+    usage: /island
+  spawn:
+    description: used to teleport to spawn
+    usage: /spawn
+  tutorial:
+    description: used to see the tutorial
+    usage: /tutorial
+  setrank:
+    description: used to set a players rank
+    usage: /setrank
+permissions:
+  betterskyblock.changecosts:
+    description: change costs permission
+    default: op
+  betterskyblock.setmoney:
+    description: set money permission
+    default: op
+  betterskyblock.changeexchangeitems:
+    description: set exchange items permission
+    default: op
+  betterskyblock.setbooster:
+    description: set boosters permission
+    default: op
+  betterskyblock.setrank:
+    description: set rank permission
+    default: op
